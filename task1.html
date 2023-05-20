@@ -2,29 +2,40 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="Denys Davydov">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task 1</title>
 </head>
 <body>
-    <h1>Додати викладача</h1>
+    <form>
+        <header>
+            <h1>Додати викладача</h1>
+        </header>
 
-    <label>Введіть повне ім'я: <input type="text" name="name"></label><br><br>
+        <label for="name">Введіть повне ім'я: </label><input id="name" type="text" name="name"><br><br>
 
-    <label>Оберіть стать: <input type="radio" name="gender" value="male"> Чоловіча <input type="radio" name="gender" value="female"> Жіноча</label><br><br>
+        <label for="gender">Стать:</label>
+        <input id="male" type="radio" name="gender" value="male" required><label for="male">Чоловіча</label>
+        <input id="female" type="radio" name="gender" value="female" required><label for="female">Жіноча</label><br><br>
 
-    <label>Введіть дату народження: <input type="date"></label><br><br>
+        <label for="date">Введіть дату народження: </label><input id="date" type="date"><br><br>
 
-    <label>Введіть email: <input type="email" name="email"></label><br><br>
+        <label for="email">Введіть email: </label><input id="email" type="email" name="email"><br><br>
 
-    <label>Введіть номер телефону: <input type="tel" name="phone"></label><br><br>
+        <label for="phone">Введіть номер телефону: </label><input id="phone" type="tel" name="phone"><br><br>
 
-    <label>Оберіть колір фону: <input type="color"></label><br><br>
+        <label for="color">Оберіть колір фону: </label><input id="color" type="color"><br><br>
 
-    <label>Введіть свою країну: <input type="text" name="country"></label><br><br>
+        <label for="country">Введіть свою країну: </label><input id="country" type="text" name="country"><br><br>
 
-    <label>Введіть своє місто: <input type="text" name="city"></label><br><br>
+        <label for="city">Введіть своє місто: </label><input id="city" type="text" name="city"><br><br>
 
-    <label><textarea placeholder="Поле для коментарів"></textarea></label><br><br>
+        <label><textarea placeholder="Поле для коментарів"></textarea></label><br><br>
 
-    <label><input type="submit" value="Надіслати"></label>
+        <section>
+            <input type="submit" value="Надіслати">
+            <input type="reset" value="Очистити">
+        </section>
+    </form>
 </body>
 </html>
